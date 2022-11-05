@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'pop1';
+    src: url("./Poppins-Light.ttf");
+}
+
+@font-face {
+    font-family: 'pop2';
+    src: url("./Poppins-Medium.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'pop1' , 'pop2' , sans-serif;
+}
+body{
+    background: white;
+}
+header{
+    position: relative;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #333;
+    width: 100%;
+}
+
+.title{
+    color: #444;
+    font-size: 27px;
+    font-weight: 900;
+}
+
+.wapper{
+    min-height: calc(100vh - 4rem - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.form{
+    position: relative;
+    padding: 13px 20px ;
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    /* background-color: transparent; */
+   /* From https://css.glass */
+   background: rgba(149, 149, 149, 0);
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40pc;
+    width: 100%;
+    z-index: -1;
+    /* From https://css.glass */
+    background: rgba(149, 149, 149, 0.44);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(6px);
+
+}
+
+.header-title{
+    text-align: center;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.form .field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.form .field label{
+    font-size: 14px;
+}
+
+.form .field input{
+    padding: 0 10px ;
+    border-radius: 5px;
+    border: 1px solid #444;
+    height: 30px;
+    outline: none;
+}
+
+.form select{
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.form .field input{
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.text textarea{
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.link{
+    font-size: 12px;
+    text-align: center;
+}
+.link a{
+    color: #444;
+}
+.link a:hover{
+    text-decoration: underline;
+}
+
+marquee{
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+}
+.add{
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+}
+
+.errortext{
+    background-color: red;
+}

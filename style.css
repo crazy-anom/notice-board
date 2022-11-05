@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'pop1';
+    src: url("./Poppins-Light.ttf");
+}
+
+@font-face {
+    font-family: 'pop2';
+    src: url("./Poppins-Medium.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'pop1' , 'pop2' , sans-serif;
+}
+
+body{
+    background: white;
+}
+header{
+    position: relative;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #444;
+}
+
+.title{
+    color: #444;
+    font-size: 27px;
+    font-weight: 900;
+}
+
+.wapper{
+    min-height: calc(100vh - 6rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    position: relative;
+    padding: 13px 20px ;
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: rgba(149, 149, 149, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40pc;
+    width: 100%;
+    z-index: -1;
+    background: rgba(149, 149, 149, 0.44);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(6px);
+
+}
+
+.header-title{
+    text-align: center;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #686868;
+    margin-bottom: 10px;
+}
+
+.form .field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form .field label{
+    font-size: 14px;
+}
+
+.form .field input{
+    padding: 0 10px ;
+    border-radius: 5px;
+    border: 1px solid #444;
+    height: 30px;
+    outline: none;
+}
+
+.form  .password{
+    position: relative;
+}
+.field i{
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translateY(-30%);
+    color: rgba(51, 51, 51, 0.322);
+    cursor: pointer;
+}
+
+.name-box{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+.name-box .field input{
+    width: 100%;
+}
+
+.create{
+    margin: 10px 0;
+    background-color: #444;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.link{
+    font-size: 12px;
+    text-align: center;
+}
+.link a{
+    color: #444;
+}
+.link a:hover{
+    text-decoration: underline;
+}
+
+marquee{
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+}
+
+.errorblock{
+    background: rgb(255, 113, 113);
+    padding: 10px 20px ;
+    border-radius: 5px;
+    border: 1px solid  rgb(255, 90, 90);
+    color: white;
+    font-size: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
